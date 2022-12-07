@@ -17,12 +17,12 @@
         <form action="#" method="post">
             <h2>Civilité</h2>
             <div class="civilite">
-                <span>
+                <div class="input">
                     <input type="radio" name="civilite" id="madame"><label for="madame">Madame</label>
-                </span>
-                <span>
+                </div>
+                <div class="input">
                     <input type="radio" name="civilite" id="monsieur"><label for="monsieur">Monsieur</label>
-                </span>
+                </div>
                 <input type="text" name="nomInput" id="nomInput" placeholder="Nom" required>
                 <input type="text" name="prenomInput" id="prenomInput" placeholder="Prénom" required>
             </div>
@@ -46,10 +46,18 @@
 
             <div class="diplomes">
                 <h2>Diplomes</h2>
-                    <span><input type="checkbox" name="cqp" id="cqp"><label for="cqp">CQP APS</label></span>
-                    <span><input type="checkbox" name="sst" id="sst"><label for="sst">SST</label></span>
-                    <span><input type="checkbox" name="ssiap1" id="ssiap1"><label for="ssiap1">SSIAP1</label></span>
-                    <span><input type="checkbox" name="ssiap2" id="ssiap2"><label for="ssiap2">SSIAP2</label></span>
+                    <div class="input">
+                        <input type="checkbox" name="cqp" id="cqp"><label for="cqp">CQP APS</label>
+                    </div>
+                    <div class="input">
+                        <input type="checkbox" name="sst" id="sst"><label for="sst">SST</label>
+                    </div>
+                    <div class="input">
+                        <input type="checkbox" name="ssiap1" id="ssiap1"><label for="ssiap1">SSIAP1</label>
+                    </div>
+                    <div class="input">
+                        <input type="checkbox" name="ssiap2" id="ssiap2"><label for="ssiap2">SSIAP2</label>
+                    </div>
             </div>
 
             <div class="dernierPoste">
@@ -62,7 +70,7 @@
                 <input type="file" name="cv" id="cv">
             </div>
         </form>
-        <button>Valider</button>
+        <button type="submit">Valider</button>
     </main>
 </body>
 </html>
